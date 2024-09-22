@@ -1,14 +1,39 @@
-div{
-    color: aqua;
-    padding-left:30%;
-    padding-right: 30%;
+/* Định dạng trang */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
 }
-body{
-    background-color: dimgrey;
+
+/* Định dạng nút tải về */
+.download-button {
+    width: 5px;
+    height: 10px;
+    padding: 15px 30px;
+    background-color: #28a745;       /* Màu nền xanh */
+    color: #ffffff00;                     /* Màu chữ trắng */
+    text-decoration: none;           /* Xóa gạch chân */
+    font-size: 18px;                 /* Kích thước chữ */
+    border-radius: 50px;             /* Làm tròn góc */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Tạo bóng */
+    transition: all 0.3s ease;       /* Chuyển mượt */
+    cursor: pointer;                 /* Thay đổi con trỏ khi di chuột qua */
 }
-body{
-    background-image: url(kimestu_no_yaiba.jpg);
-    background-attachment:fixed;
-    
+
+/* Hiệu ứng hover cho nút */
+.download-button:hover {
+    background-color: #218838;       /* Màu nền đậm hơn khi di chuột qua */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Tăng bóng đổ */
+    transform: translateY(-3px);     /* Nhấc nút lên khi di chuột qua */
 }
-    
+
+/* Hiệu ứng khi nhấn nút */
+.download-button:active {
+    background-color: #1e7e34;       /* Màu đậm hơn khi nhấn */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);  /* Giảm bóng */
+    transform: translateY(2px);      /* Nút hạ xuống khi nhấn */
+}
